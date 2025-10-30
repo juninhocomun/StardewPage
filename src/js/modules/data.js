@@ -2,19 +2,19 @@ export let data = [];
 export let filteredData = [];
 export let activeArray = [];
 const files = [
-  "http://localhost:3000/js/jsons/big-craftables.json",
-  "http://localhost:3000/js/jsons/boots.json",
-  "http://localhost:3000/js/jsons/flooring.json",
-  "http://localhost:3000/js/jsons/furniture.json",
-  "http://localhost:3000/js/jsons/hats.json",
-  "http://localhost:3000/js/jsons/mannequins.json",
-  "http://localhost:3000/js/jsons/objects.json",
-  "http://localhost:3000/js/jsons/pants.json",
-  "http://localhost:3000/js/jsons/shirts.json",
-  "http://localhost:3000/js/jsons/tools.json",
-  "http://localhost:3000/js/jsons/trinkets.json",
-  "http://localhost:3000/js/jsons/wallpaper.json",
-  "http://localhost:3000/js/jsons/weapons.json",
+  "http://localhost:3000/src/js/jsons/big-craftables.json",
+  "http://localhost:3000/src/js/jsons/boots.json",
+  "http://localhost:3000/src/js/jsons/flooring.json",
+  "http://localhost:3000/src/js/jsons/furniture.json",
+  "http://localhost:3000/src/js/jsons/hats.json",
+  "http://localhost:3000/src/js/jsons/mannequins.json",
+  "http://localhost:3000/src/js/jsons/objects.json",
+  "http://localhost:3000/src/js/jsons/pants.json",
+  "http://localhost:3000/src/js/jsons/shirts.json",
+  "http://localhost:3000/src/js/jsons/tools.json",
+  "http://localhost:3000/src/js/jsons/trinkets.json",
+  "http://localhost:3000/src/js/jsons/wallpaper.json",
+  "http://localhost:3000/src/js/jsons/weapons.json",
 ];
 
 export async function callJSON() {

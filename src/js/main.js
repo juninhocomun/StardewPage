@@ -1,7 +1,7 @@
-import { callJSON, data } from "http://localhost:3000/js/modules/data.js";
-import { load } from "http://localhost:3000/js/modules/ui.js";
-import { generatePagination } from "http://localhost:3000/js/modules/pagination.js";
-import { setupSearch } from "http://localhost:3000/js/modules/search.js";
+import { callJSON, data } from "http://localhost:3000/src/js/modules/data.js";
+import { load } from "http://localhost:3000/src/js/modules/ui.js";
+import { generatePagination } from "http://localhost:3000/src/js/modules/pagination.js";
+import { setupSearch } from "http://localhost:3000/src/js/modules/search.js";
 
 async function init() {
   await callJSON();
