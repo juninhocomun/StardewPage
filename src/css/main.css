@@ -1,11 +1,11 @@
-@import "/StardewPage/src/css/base/_reset.css";
-@import "/StardewPage/src/css/base/_typography.css";
-@import "/StardewPage/src/css/base/_variables.css";
-@import "/StardewPage/src/css/layout/_header-content.css";
-@import "/StardewPage/src/css/layout/_main-content.css";
-@import "/StardewPage/src/css/components/_card.css";
-@import "/StardewPage/src/css/components/_menu.css";
-@import "/StardewPage/src/css/components/_pagination.css";
+@import "./StardewPage/src/css/base/_reset.css";
+@import "./StardewPage/src/css/base/_typography.css";
+@import "./StardewPage/src/css/base/_variables.css";
+@import "./StardewPage/src/css/layout/_header-content.css";
+@import "./StardewPage/src/css/layout/_main-content.css";
+@import "./StardewPage/src/css/components/_card.css";
+@import "./StardewPage/src/css/components/_menu.css";
+@import "./StardewPage/src/css/components/_pagination.css";
 @import "./_utils.css";
 
 
