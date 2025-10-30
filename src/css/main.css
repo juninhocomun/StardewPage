@@ -1,0 +1,74 @@
+@import "base/_reset.css";
+@import "base/_typography.css";
+@import "base/_variables.css";
+@import "layout/_header-content.css";
+@import "layout/_main-content.css";
+@import "components/_card.css";
+@import "components/_menu.css";
+@import "components/_pagination.css";
+@import "./_utils.css";
+
+
+body {
+  display: flex;
+  flex-direction: column; /* tudo em coluna */
+  align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-image: url("https://images3.alphacoders.com/126/thumb-1920-1269904.png");
+  font-family: "Poppins", sans-serif;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+a {
+  color: #8191f0;
+}
+a:hover {
+  color: #c2c6ff;
+}
+header,
+nav,
+footer {
+  flex: 0 0 auto; /* tamanho fixo */
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  padding: var(--padding-medium);
+  gap: var(--gap-medium);
+}
+main {
+  flex: 1 0 auto; /* ocupa o resto da tela */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button{
+  all: unset;
+  cursor: pointer;
+  background-color: var(--fourth-all-color);
+  color: var(--third-all-color);
+  width: 5rem;
+  height: 5rem;
+}
+@media (min-width: 1200px) {
+  header {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  header {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    width: 100vw;
+    flex-direction: column;
+  }
+}

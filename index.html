@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stardew</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="icon" href="./public/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- "aside" serve como container para abas laterais -->
+    <!-- cabeçalho da página semanticamente certo "haeder" -->
+    <header class="header">
+      <figure class="header__picture">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/pt/f/fd/Logo_of_Stardew_Valley.png"
+          alt="Image title"
+        />
+        <figcaption class="visually-hidden">Stardew Valley</figcaption>
+      </figure>
+      <section class="header__input-wrapper">
+        <label for="seach" class="header__label">Pesquise Algum item!</label>
+        <input
+          id="seach"
+          class="header__input"
+          type="text"
+          placeholder="pesquisar"
+        />
+      </section>
+      <aside class="menu">
+        <h3 class="menu__title">Informações adicionais</h3>
+        <nav class="menu__nav">
+          <ul class="menu__nav-list">
+            <li class="menu__nav-item">
+              <a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                >wiki↗</a
+              >
+            </li>
+            <li class="menu__nav-item">
+              <a href="https://pt.stardewvalleywiki.com/Aldeões"
+                >Personagens↗</a
+              >
+            </li>
+            <li class="menu__nav-item">
+              <a href="https://pt.stardewvalleywiki.com/Monstros">Monstros↗</a>
+            </li>
+            <li class="menu__nav-item">
+              <a href="https://pt.stardewvalleywiki.com/Animais">Animais↗</a>
+            </li>
+            <li class="menu__nav-item">
+              <a href="https://pt.stardewvalleywiki.com/Guia_de_Introdução"
+                >Guia de Introdução↗</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </header>
+    <!-- principal -->
+    <main class="main">
+      <nav class="pagination">
+        <button class="pagination__button" data-direction="prev">&lt;-</button>
+        <ul class="pagination__list"></ul>
+        <button class="pagination__button" data-direction="next">-&gt;</button>
+      </nav>
+      <section class="main__cards">
+        <!-- onde os itens vao ficar -->
+      </section>
+      <nav class="pagination">
+        <button class="pagination__button" data-direction="prev">&lt;-</button>
+        <ul class="pagination__list"></ul>
+        <button class="pagination__button" data-direction="next">-&gt;</button>
+      </nav>
+    </main>
+    <footer></footer>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

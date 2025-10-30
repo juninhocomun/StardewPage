@@ -1,0 +1,32 @@
+.main__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+  max-width: 95vw;
+  justify-content: center; /* centraliza a grid horizontalmente */
+  padding: var(--padding-medium);
+}
+@media (max-width: 768px) {
+  .main__cards {
+    max-width: 100vw;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: var(--padding-small);
+  }
+  .main__cards {
+    width: 100vw;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .main__pages {
+    width: 85vw;
+  }
+  .menu__nav-list {
+    flex-direction: row;
+    gap: var(--gap-small);
+  }
+  .main__cards {
+    width: 100vw;
+    padding: 0;
+  }
+}

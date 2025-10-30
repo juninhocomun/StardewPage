@@ -1,0 +1,69 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: var(--gap-small);
+  color: var(--secondary-color);
+}
+.pagination__list {
+  padding: var(--padding-small) 0 var(--padding-small) 0;
+  margin: 0.5rem 0 0.5rem 0;
+  width: 60vw;
+  max-height: 3.5rem;
+  overflow: hidden;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+.pagination__number {
+  display: block;
+  min-width: 2.5rem;
+  max-width: 60vw;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe4c477;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pagination__button{
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--second-all-color);
+  border-radius: var(--border-radius-small);
+  color: var(--main-font-color);
+  text-align: center;
+  font-size: 1.3rem;
+}
+.pagination__button:active{
+  background-color: var(--third-all-color);
+}
+.pagination__list::-webkit-scrollbar {
+  width: 5px; /* largura vertical */
+  height: 5px; /* altura horizontal */
+}
+/* O “fundo” da barra */
+.pagination__list::-webkit-scrollbar-track {
+  background: #ffffff5b;
+  border-radius: 6px;
+}
+/* O “polegar” da barra (parte que você arrasta) */
+.pagination__list::-webkit-scrollbar-thumb {
+  background: #003f47;
+  border-radius: 6px;
+}
+/* O “polegar” quando hover */
+.pagination__list::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.--active{
+  background-color: #ff0000bd;
+}

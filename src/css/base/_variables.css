@@ -1,0 +1,15 @@
+:root {
+  --main-font-color: #fff5e6;
+  --second-all-color: #2b2b2b;
+  --third-all-color: #1b1b1b;
+  --fourth-all-color: #cacaca;
+  --translucid-black-color: #0000006e;
+  --gap-medium: 1rem;
+  --padding-medium: 1rem;
+  --gap-small: 0.5rem;
+  --padding-small: 0.5rem;
+  --padding-very-small: 5px;
+  --gap-very-small: 5px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
+}
