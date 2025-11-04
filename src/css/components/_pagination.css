@@ -29,7 +29,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffe4c477;
+  background-color: #ffe4c4b7;
+  opacity: 0.9;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -45,6 +46,10 @@
 }
 .pagination__button:active{
   background-color: var(--third-all-color);
+}
+.pagination__number:hover{
+  transform: scale(1.1);
+  opacity: 1;
 }
 .pagination__list::-webkit-scrollbar {
   width: 5px; /* largura vertical */

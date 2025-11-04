@@ -3,6 +3,7 @@
 @import "./base/_variables.css";
 @import "./layout/_header-content.css";
 @import "./layout/_main-content.css";
+@import "./layout/_footer-content.css";
 @import "./components/_card.css";
 @import "./components/_menu.css";
 @import "./components/_pagination.css";

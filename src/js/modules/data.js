@@ -25,6 +25,6 @@ export async function callJSON() {
         .catch((err) => console.error(err))
     )
   );
-  data = results.flat();
-  activeArray = data;
+  data = results.flat()
+  activeArray = [...data];
 }

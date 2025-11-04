@@ -6,6 +6,13 @@ let timeout;
 const input = document.getElementById("seach");
 
 export function setupSearch() {
+  input.addEventListener("keydown", () => {
+    if (input.value === "") {
+      generatePagination(data);
+      load(data, 0, 50);
+      activeArray.splice(0, activeArray.length, ...data);
+    }
+  });
   input.addEventListener("keyup", () => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
@@ -18,7 +25,6 @@ export function filter(searchTerm) {
   const filtered = data.filter((e) =>
     e.names["data-pt-BR"].toLowerCase().includes(searchTerm.toLowerCase())
   );
-
   if (filtered.length) {
     generatePagination(filtered);
     load(filtered, 0, 50);
