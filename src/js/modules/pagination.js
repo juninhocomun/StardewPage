@@ -79,8 +79,9 @@ pageButton.forEach((element) => {
 
 paginationList.forEach((element) => {
   element.addEventListener("wheel", (e) => {
+    const element = e.currentTarget;
     e.preventDefault();
-    secHover(e, { justHover: true }),
+    secHover(element, { justHover: true, deltaY: e.deltaY }),
       {
         passive: false,
       };
