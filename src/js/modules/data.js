@@ -2,19 +2,19 @@ export let data = [];
 export let filteredData = [];
 export let activeArray = [];
 const files = [
-  "http://26.119.241.217:3000/src/js/jsons/big-craftables.json",
-  "http://26.119.241.217:3000/src/js/jsons/boots.json",
-  "http://26.119.241.217:3000/src/js/jsons/flooring.json",
-  "http://26.119.241.217:3000/src/js/jsons/furniture.json",
-  "http://26.119.241.217:3000/src/js/jsons/hats.json",
-  "http://26.119.241.217:3000/src/js/jsons/mannequins.json",
-  "http://26.119.241.217:3000/src/js/jsons/objects.json",
-  "http://26.119.241.217:3000/src/js/jsons/pants.json",
-  "http://26.119.241.217:3000/src/js/jsons/shirts.json",
-  "http://26.119.241.217:3000/src/js/jsons/tools.json",
-  "http://26.119.241.217:3000/src/js/jsons/trinkets.json",
-  "http://26.119.241.217:3000/src/js/jsons/wallpaper.json",
-  "http://26.119.241.217:3000/src/js/jsons/weapons.json",
+  "./src/js/jsons/big-craftables.json",
+  "./src/js/jsons/boots.json",
+  "./src/js/jsons/flooring.json",
+  "./src/js/jsons/furniture.json",
+  "./src/js/jsons/hats.json",
+  "./src/js/jsons/mannequins.json",
+  "./src/js/jsons/objects.json",
+  "./src/js/jsons/pants.json",
+  "./src/js/jsons/shirts.json",
+  "./src/js/jsons/tools.json",
+  "./src/js/jsons/trinkets.json",
+  "./src/js/jsons/wallpaper.json",
+  "./src/js/jsons/weapons.json",
 ];
 
 export async function callJSON() {
