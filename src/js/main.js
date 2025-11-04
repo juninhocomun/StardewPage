@@ -1,7 +1,7 @@
-import { callJSON, data } from "../StardewPage/src/js/modules/data.js";
-import { load } from "../StardewPage/src/js/modules/ui.js";
-import { generatePagination } from "../StardewPage/src/js/modules/pagination.js";
-import { setupSearch } from "../StardewPage/src/js/modules/search.js";
+import { callJSON, data } from "./modules/data.js";
+import { load } from "./modules/ui.js";
+import { generatePagination } from "./modules/pagination.js";
+import { setupSearch } from "./modules/search.js";
 
 async function init() {
   await callJSON();
