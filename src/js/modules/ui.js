@@ -6,18 +6,22 @@ const template = document.createElement("template");
 export function card(title, image, index) {
   const article = document.createElement("article");
   article.classList.add("card");
+  article.setAttribute("name", title);
 
   const img = document.createElement("img");
   img.src = `data:image/png;base64,${image}`;
   img.classList.add("card__picture");
+  img.setAttribute("name", title);
 
   const h2 = document.createElement("h2");
   h2.classList.add("card__title");
   h2.textContent = title;
+  h2.setAttribute("name", title);
 
   const span = document.createElement("span");
   span.classList.add("card__number");
   span.textContent = index;
+  span.setAttribute("name", title);
 
   article.append(img, h2, span);
   template.content.appendChild(article);
@@ -30,7 +34,18 @@ export function load(arr, min, max) {
   }
   main.appendChild(template.content);
 }
-
+main.addEventListener("click", (e) => {
+  const element = e.target;
+  if (
+    element.matches("article.card") ||
+    element.matches("h2.card__title") ||
+    element.matches("img.card__picture")
+  ) {
+    window.location.assign(
+      `https://pt.stardewvalleywiki.com/${e.target.getAttribute("name")}`
+    );
+  }
+});
 export function notFoundComponentLoad() {
   const notFound = document.createElement("div");
   notFound.classList.add("not-found");
